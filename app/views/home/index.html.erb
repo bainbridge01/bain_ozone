@@ -1,8 +1,75 @@
  <div class="jumbotron <%= @api_color %>" >
   <h1 class="display-4"><%= @final_output %></h1>
-  <p class="lead">this is the Ozone air quality readout for my nieghborhood in Las Vegas</p>
+  <p class="lead">This is the Ozone air quality readout for my nieghborhood in Las Vegas</p>
   <hr class="my-4">
-  <p>HIT reload in your web browser to update the reading....</p>
-  <a class="btn btn-secondary btn-lg" href="#" role="button">Learn more</a>
+  <p> 
+  
+    <div class="sectionBody">
+        <p>
+            The AQI is divided into color-coded categories and each category is identified by a simple informative 
+            descriptor. The descriptors are intended to convey information to the public about how air quality  
+            relates to public health. The table below defines the AQI categories.
+            <br>
+       <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+        </p>
+        <table class="aqiTable" style="width:600px" class="table table-dark">
+            <tbody><tr>
+                <th>AQI Numbers</th>
+                <th>AQI Category (Descriptor)</th>
+                <th>AQI Color</th>
+                
+                <th>Category Number</th>
+            </tr>
+            <tr>
+                <td>0 - 50</td>
+                <td>Good</td>
+                <td class="aqi_green">Green</td>
+                
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>51 - 100</td>
+                <td>Moderate</td>
+                <td class="aqi_yellow">Yellow</td>
+                
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>101 - 150</td>
+                <td>Unhealthy for Sensitive Groups</td>
+                <td class="aqi_orange">Orange</td>
+               
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>151 - 200</td>
+                <td>Unhealthy</td>
+                <td class="aqi_red">Red</td>
+                
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>201 - 300</td>
+                <td>Very Unhealthy</td>
+                <td class="aqi_purple">Purple</td>
+                
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>301 - 500</td>
+                <td>Hazardous</td>
+                <td class="aqi_maroon">Maroon</td>
+                
+                <td>6</td>
+            </tr>
+        </tbody></table> 
+        </div>
+      </div>
+        
+    </div>
+  </p>
+  <a class="btn btn-secondary btn-lg" href="https://www.airnow.gov/?city=Las%20Vegas&state=NV&country=USA" role="button">Learn more</a>
 </div>
+
 
